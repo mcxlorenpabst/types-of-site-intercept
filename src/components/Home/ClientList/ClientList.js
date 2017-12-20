@@ -4,15 +4,6 @@ import './ClientList.css';
 
 
 class ClientList extends Component {
-
-  constructor(props){
-    super(props);
-    this.state = {
-      userInput: ''
-    }
-  }
-
-
   render() {
     return (
       <section className="client_list">

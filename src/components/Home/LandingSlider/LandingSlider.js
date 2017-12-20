@@ -4,15 +4,6 @@ import './LandingSlider.css';
 
 
 class LandingSlider extends Component {
-
-  constructor(props){
-    super(props);
-    this.state = {
-      userInput: ''
-    }
-  }
-
-
   render() {
     return (
       <section className="landing_slider">
