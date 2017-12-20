@@ -12,23 +12,18 @@
     z-index: 9999 !important;
 }
 
-.desktop_header a{
-    text-decoration: none;
-    color: #494d4f;
-}
-
 .desktop_header_inner{
     width: 100%;
     height: 75px;
-    max-width: 960px;
+    max-width: 1000px;
     padding-bottom: 15px;
     margin: 0 auto !important;
     position: relative;
 }
 
 .desktop_header_logo{
-    width: 125px;
-    height: 60px;
+    width: 100px;
+    height: 48px;
     background: url('https://www.maritzcx.com/wp-content/themes/allegiance/images/logo.svg')center no-repeat;
     background-size: auto;
     position: absolute;
@@ -36,15 +31,22 @@
 }
 
 .desktop_nav{
-    width: 300px;
+    width: 350px;
     height: 60px;
     position: absolute;
-    left: 300px;
+    left: 260px;
     top: 0px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     font-weight: bold;
+}
+
+.desktop_nav li{
+    font-size: 12px;
+    font-weight: 750;
+    color: #494d4f;
+    line-height: 20px;
 }
 
 .header_btn{

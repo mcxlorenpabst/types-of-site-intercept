@@ -1,27 +1,20 @@
 import React, { Component } from 'react';
 // import axios from 'axios';
-import { Link } from 'react-router-dom';
+import { li } from 'react-router-dom';
 import './Header.css';
 
 class Header extends Component {
-
-  constructor(props){
-    super(props);
-    this.state = {
-      userInput: ''
-    }
-  }
 
   render() {
     return (
           <div className='desktop_header'>
             <div className='desktop_header_inner'>
-              <Link to='/' className='desktop_header_logo'></Link>
+              <div to='/' className='desktop_header_logo'></div>
               <ul className='desktop_nav'>
-                <Link to='/what-we-do'>WHAT WE DO</Link>
-                <Link to='/industries'>INDUSTRIES</Link>
-                <Link to='/learn'>LEARN</Link>
-                <Link to='/about'>ABOUT</Link>
+                <li to='/what-we-do'>WHAT WE DO</li>
+                <li to='/industries'>INDUSTRIES</li>
+                <li to='/learn'>LEARN</li>
+                <li to='/about'>ABOUT</li>
               </ul>
               <div className='header_btn header_lets_talk'>LET'S TALK</div>
               <div className='header_btn header_login'>LOGIN</div>
@@ -30,6 +23,7 @@ class Header extends Component {
           </div>
     );
   }
+
 }
 
 
