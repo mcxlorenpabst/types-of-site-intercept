@@ -35,8 +35,8 @@ class Home extends Component {
         <LandingSlider />
         <GreenCX />
         <ClientList />
-        <Competencies />
         <CustomerExp />
+        <Competencies />
 
       </section>
     );
