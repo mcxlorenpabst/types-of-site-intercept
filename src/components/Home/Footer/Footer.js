@@ -50,7 +50,12 @@ class Footer extends Component {
           </div>
 
           <div className='footer_base'>
-
+            <div className='logo_container'><img id='twitter_logo' src='https://www.maritzcx.com/wp-content/uploads/2014/10/social-twitter.png' alt='twitter logo' /></div>
+            <div className='logo_container'><img id='linkedin_logo' src='https://www.maritzcx.com/wp-content/uploads/2014/10/linkedin31.png' alt='linkedin logo' /></div>
+            <div className='logo_container'><img id='google_plus_logo' src='https://www.maritzcx.com/wp-content/uploads/2014/10/social-googleplus.png' alt='google plus logo' /></div>
+            <div className='logo_container'><img id='facebook_logo' src='https://www.maritzcx.com/wp-content/uploads/2014/10/social-facebook.png' alt='facebook logo' /></div>
+            <p>Privacy Policy ©MaritzCX Research LLC 2017</p>
+            <img src='https://www.maritzcx.com/wp-content/themes/allegiance/images/footer-logo.png' alt='maritzcx logo' className='maritzcx_logo' />
           </div>
         </div>
       </section>
