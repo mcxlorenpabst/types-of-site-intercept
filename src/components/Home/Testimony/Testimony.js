@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import './Competencies.css';
+import './Testimony.css';
 
 
 
-class Competencies extends Component {
+class Testimony extends Component {
 
   constructor(props){
     super(props);
@@ -15,7 +15,7 @@ class Competencies extends Component {
 
   render() {
     return (
-      <section className="competencies">
+      <section className="testimony">
 
 
 
@@ -25,4 +25,4 @@ class Competencies extends Component {
 }
 
 
-export default Competencies;
+export default Testimony;

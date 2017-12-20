@@ -5,7 +5,7 @@ import Header from './../Header/Header.js';
 import LandingSlider from './LandingSlider/LandingSlider.js';
 import GreenCX from './GreenCX/GreenCX.js';
 import ClientList from './ClientList/ClientList.js';
-import Competencies from './Competencies/Competencies.js';
+import Testimony from './Testimony/Testimony.js';
 import CustomerExp from './CustomerExp/CustomerExp.js';
 
 
@@ -36,7 +36,7 @@ class Home extends Component {
         <GreenCX />
         <ClientList />
         <CustomerExp />
-        <Competencies />
+        <Testimony />
 
       </section>
     );
