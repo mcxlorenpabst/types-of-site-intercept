@@ -45,7 +45,9 @@ class Footer extends Component {
               <li>About</li>
               <li>Careers</li>
               <li>Our Story</li>
-              <li><a href='https://alias.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=SXWD5F' target='_blank'>Leave Feedback</a></li>
+              <li>
+                <a href='https://alias.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=SXWD5F' target='_blank' rel="noopener noreferrer">Leave Feedback</a>
+              </li>
             </ul>
           </div>
 
