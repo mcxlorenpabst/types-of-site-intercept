@@ -1,0 +1,53 @@
+.landing_slider{
+    width: 100%;
+    height: 560px;
+    background: url('https://maritzcx-decortinteractiv.netdna-ssl.com/wp-content/uploads/2017/05/GettyImages-500816257.jpg?ix=474')center no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-top: 150px;
+}
+
+.landing_slider_content{
+    width: 60%;
+    height: 200px;
+    margin: 0 auto !important;
+    position: relative;
+    color: white;
+    text-align: center;
+}
+
+.landing_slider_results{
+    width: 316px;
+    height: 96px;
+    background: #8ac452;
+    font-size: 80px;
+    line-height: 96px;
+    font-weight: bolder;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.landing_slider_value{
+    width: 814px;
+    height: 53px;
+    position: absolute;
+    left: 0px;
+    top: 96px;
+    font-size: 34px;
+    line-height: 53px;
+    padding: 0px 15px 0px 15px;
+    background: #444;
+}
+
+.landing_slider_ebook{
+    width: 120px;
+    height: 37px;
+    line-height: 37px;
+    font-size: 10px;
+    position: absolute;
+    left:  670px;
+    top: 149px;
+    background: #f5921e;
+}
+

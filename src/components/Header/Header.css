@@ -1,0 +1,85 @@
+
+.desktop_header{
+    width: 100%;
+    height: 75px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: #494d4f;
+    background: rgba(255, 255, 255, 0.9);
+    font-size: 10px;
+    font-weight: bold;
+    z-index: 9999 !important;
+}
+
+.desktop_header a{
+    text-decoration: none;
+    color: #494d4f;
+}
+
+.desktop_header_inner{
+    width: 100%;
+    height: 75px;
+    max-width: 960px;
+    padding-bottom: 15px;
+    margin: 0 auto !important;
+    position: relative;
+}
+
+.desktop_header_logo{
+    width: 125px;
+    height: 60px;
+    background: url('https://www.maritzcx.com/wp-content/themes/allegiance/images/logo.svg')center no-repeat;
+    background-size: auto;
+    position: absolute;
+    top: 15px;
+}
+
+.desktop_nav{
+    width: 300px;
+    height: 60px;
+    position: absolute;
+    left: 300px;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-weight: bold;
+}
+
+.header_btn{
+    height: 20px;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 20px;
+    position: absolute;
+    bottom: 15px;
+    cursor: pointer;
+}
+
+.header_lets_talk{
+    width: 80px;
+    background: #f5921e;
+    color: white;
+    left: 700px;
+}
+
+.header_lets_talk:hover{
+    background: white;
+    border: 1px solid #f5921e;
+    color: #f5921e;
+}
+
+.header_login{
+    width: 60px;
+    border: 1px solid #494d4f;
+    left: 790px;
+}
+
+.header_us{
+    width: 20px;
+    border: 1px solid #494d4f;
+    left: 860px;
+}
+
+
