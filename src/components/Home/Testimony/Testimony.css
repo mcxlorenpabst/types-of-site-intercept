@@ -1,11 +1,39 @@
 .testimony{
     width: 100%;
-    height: 800px;
     background: url('https://www.maritzcx.com/wp-content/uploads/2014/10/customers-background.png?id=48')center no-repeat;
     background-size: cover;
     position: relative;
 }
 
+.testimony_inner{
+    max-width: 900px;
+    margin: 0 auto !important;
+    padding: 90px 0px 100px 0px;
+    color: white;
+}
 
+.quotes_img{
+    width: 100%;
+    margin-bottom: 30px;
+}
 
+.testimony_words{
+    width: 800px;
+    margin: 0 auto 60px auto !important;
+    font-size: 18px;
+    line-height: 35px;
+    text-align: center;
+}
 
+.testimony_logo_container{
+    width: 230px;
+    height: auto;
+    margin: 0 auto !important;
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+}
+
+.testimony_logo_container p{
+    line-height: 70px;
+}
