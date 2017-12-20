@@ -28,6 +28,7 @@
     background-size: auto;
     position: absolute;
     top: 15px;
+    cursor: pointer;
 }
 
 .desktop_nav{
@@ -47,6 +48,7 @@
     font-weight: 750;
     color: #494d4f;
     line-height: 20px;
+    cursor: pointer;
 }
 
 .header_btn{

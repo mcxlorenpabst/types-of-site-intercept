@@ -6,6 +6,11 @@
     padding: 60px 0px 60px 0px;
 }
 
+.footer a{
+    color: white;
+    text-decoration: none;
+}
+
 .footer_inner{
     max-width: 1000px;
     margin: 0 auto !important;
