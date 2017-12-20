@@ -7,6 +7,7 @@ import GreenCX from './GreenCX/GreenCX.js';
 import ClientList from './ClientList/ClientList.js';
 import Testimony from './Testimony/Testimony.js';
 import CustomerExp from './CustomerExp/CustomerExp.js';
+import BottomSurvey from './BottomSurvey/BottomSurvey.js';
 import Footer from './Footer/Footer.js';
 
 
@@ -38,6 +39,7 @@ class Home extends Component {
         <ClientList />
         <CustomerExp />
         <Testimony />
+        <BottomSurvey />
         <Footer />
 
       </section>
