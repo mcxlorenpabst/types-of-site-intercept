@@ -2,6 +2,7 @@
     width: 100%;
     background: #494d4f;
     position: relative;
+    transition: all 0.4s;
 }
 
 .bottom_survey_inner{
@@ -15,5 +16,6 @@
 .bottom_survey_frame{
     width: 1000px;
     display: block;
+    transition: all 0.4s;
 }
 
