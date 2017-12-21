@@ -20,7 +20,7 @@ class Home extends Component {
 
     this.state = {
       userInput: '',
-      surveyType: 'tab'
+      surveyType: 'modal'
     }
 
     this.updateSurveyType = this.updateSurveyType.bind(this);
