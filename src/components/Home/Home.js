@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Home.css';
 
-import Header from './../Header/Header.js';
+import Header from './Header/Header.js';
 import LandingSlider from './LandingSlider/LandingSlider.js';
 import GreenCX from './GreenCX/GreenCX.js';
 import ClientList from './ClientList/ClientList.js';
