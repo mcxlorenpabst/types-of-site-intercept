@@ -5,7 +5,6 @@ class ModalSurvey extends Component {
 
   constructor(props){
     super(props);
-
     this.state = {
       showModal: false,
       destroyModal: false,
@@ -16,11 +15,16 @@ class ModalSurvey extends Component {
   }
 
   componentDidMount(){
+    this.mounted = true;
     window.addEventListener('scroll', this.handleScroll);
   }
 
+  componentWillUnmount(){
+    this.mounted = false;
+  }
+
   handleScroll(){
-    if (window.scrollY > 500){
+    if (window.pageYOffset > 500 && this.mounted){
       this.setState({
         showModal: true
       })
@@ -57,7 +61,7 @@ class ModalSurvey extends Component {
 
               </div>
             </div>
-          : ' '
+          : null
         }
       </section>
     );
