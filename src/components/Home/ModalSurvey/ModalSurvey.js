@@ -15,16 +15,15 @@ class ModalSurvey extends Component {
   }
 
   componentDidMount(){
-    this.mounted = true;
     window.addEventListener('scroll', this.handleScroll);
   }
 
   componentWillUnmount(){
-    this.mounted = false;
+    window.removeEventListener('scroll', this.handleScroll);
   }
 
   handleScroll(){
-    if (window.pageYOffset > 500 && this.mounted){
+    if (window.pageYOffset > 500){
       this.setState({
         showModal: true
       })
