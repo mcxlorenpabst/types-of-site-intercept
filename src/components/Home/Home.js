@@ -8,6 +8,8 @@ import ClientList from './ClientList/ClientList.js';
 import Testimony from './Testimony/Testimony.js';
 import CustomerExp from './CustomerExp/CustomerExp.js';
 import BottomSurvey from './BottomSurvey/BottomSurvey.js';
+import TabSurvey from './TabSurvey/TabSurvey.js';
+import ModalSurvey from './ModalSurvey/ModalSurvey.js';
 import Footer from './Footer/Footer.js';
 
 
@@ -17,29 +19,38 @@ class Home extends Component {
     super(props);
 
     this.state = {
-      userInput: ''
+      userInput: '',
+      surveyType: 'tab'
     }
 
+    this.updateSurveyType = this.updateSurveyType.bind(this);
   }
 
-  componentDidMount(){
-    //make sure the function is available and that we haven't already added the invite to the DOM
-    if (window.mcxAddModal && !document.getElementById('mcxInviteModal')){
-      window.mcxAddModal();
-    }
+  updateSurveyType(str){
+    this.setState({
+      surveyType: str
+    })
   }
 
   render() {
     return (
       <section className="home">
 
-        <Header />
+        <Header updateSurveyType={this.updateSurveyType} />
         <LandingSlider />
         <GreenCX />
         <ClientList />
         <CustomerExp />
         <Testimony />
-        <BottomSurvey />
+        { 
+          this.state.surveyType === 'inline' ? 
+            <BottomSurvey /> 
+          : this.state.surveyType === 'tab' ? 
+            <TabSurvey />
+          : this.state.surveyType === 'modal' ?
+            <ModalSurvey />
+          : null
+        }
         <Footer />
 
       </section>

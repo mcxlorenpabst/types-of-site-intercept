@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-// import axios from 'axios';
-import { li } from 'react-router-dom';
 import './Header.css';
 
 class Header extends Component {
@@ -11,10 +9,9 @@ class Header extends Component {
             <div className='desktop_header_inner'>
               <div to='/' className='desktop_header_logo'></div>
               <ul className='desktop_nav'>
-                <li to='/what-we-do'>WHAT WE DO</li>
-                <li to='/industries'>INDUSTRIES</li>
-                <li to='/learn'>LEARN</li>
-                <li to='/about'>ABOUT</li>
+                <li onClick={ () => this.props.updateSurveyType('inline') }>Inline Survey</li>
+                <li onClick={ () => this.props.updateSurveyType('tab') }>Feedback Tab</li>
+                <li onClick={ () => this.props.updateSurveyType('modal') }>Pop Up Modal</li>
               </ul>
               <div className='header_btn header_lets_talk'>LET'S TALK</div>
               <div className='header_btn header_login'>LOGIN</div>

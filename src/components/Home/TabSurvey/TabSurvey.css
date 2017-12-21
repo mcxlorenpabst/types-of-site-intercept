@@ -1,0 +1,31 @@
+.tab_survey{
+    width: 800px;
+    height: 650px;
+    position: fixed;
+    top: 120px;
+    z-index: 180;
+    background: #fff;
+    transition: all 0.4s;
+}
+
+.feedback_tab{
+    width: 120px;
+    height: 40px;
+    line-height: 38px;
+    text-align: center;
+    font-size: 18px;
+    color: #eee;
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -80px;
+    top: 80px;
+    border-radius: 2px;
+    cursor: pointer;
+    background: #f5921e;
+    border: 1px solid #444;
+}
+
+.tab_survey_frame{
+    width: 100%;
+    height: 100%;
+}
