@@ -7,11 +7,12 @@ class BottomSurvey extends Component {
         super(props);
 
         this.state = {
-            showIframe: true,
+            showIframe: false,
             destroyBottomSurvey: false,
         }
 
         this.destroyBottomSurvey = this.destroyBottomSurvey.bind(this);
+        this.showIframe = this.showIframe.bind(this);
     }
 
     destroyBottomSurvey(){
@@ -22,8 +23,14 @@ class BottomSurvey extends Component {
                 this.setState({
                     destroyBottomSurvey: true
                 })
-            }, 500)
+            }, 1000)
         })
+    }
+
+    showIframe(){
+        setTimeout(() => {
+            this.setState({showIframe: true})
+        }, 300)
     }
 
     render() {
@@ -37,7 +44,7 @@ class BottomSurvey extends Component {
                     :   <div className='bottom_survey' style={{height: frameHeight + 'px'}}>
                             <div className='bottom_survey_inner'>
                                 <div className='tab_survey_close' onClick={this.destroyBottomSurvey} >X</div>
-                                <iframe src='https://alias.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=SXWD5F' className='bottom_survey_frame' style={{height: frameHeight + 'px'}} title='surveyFrame' id='surveyFrame' />     
+                                <iframe src='https://alias.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=SXWD5F' className='bottom_survey_frame' style={{height: frameHeight + 'px'}} title='surveyFrame' id='surveyFrame' onLoad={this.showIframe} />     
                             </div>
                         </div>
                 }
