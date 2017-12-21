@@ -19,7 +19,9 @@ class ModalSurvey extends Component {
   render() {
     return (
       <section className='modal_survey'>
-        modal survey
+        <div className='modal'>
+          modal survey
+        </div>
       </section>
     );
   }
