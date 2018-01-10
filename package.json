@@ -29,7 +29,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "clean": "rm -r build",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "postinstall": "npm run build && node server/index.js"
   },
   "proxy": "http://localhost:8085"
 }
